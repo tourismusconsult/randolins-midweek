@@ -244,7 +244,7 @@ body::before{content:'';position:fixed;top:0;left:0;right:0;height:3px;backgroun
 .day-card h4{margin-bottom:10px}
 .day-card p{font-size:14px;line-height:22px;color:var(--color-text-secondary)}
 .itinerary-img{display:none;position:relative;overflow:hidden}
-.itinerary-img .placeholder-img{aspect-ratio:5/7;min-height:300px;transition:transform .1s linear}
+.itinerary-img .placeholder-img{aspect-ratio:5/7;min-height:300px}
 @media(min-width:768px){
   .itinerary{grid-template-columns:1fr 1fr;align-items:start}
   .itinerary-img{display:block;position:sticky;top:100px;box-shadow:var(--shadow-card)}
@@ -342,7 +342,7 @@ body::before{content:'';position:fixed;top:0;left:0;right:0;height:3px;backgroun
 .placeholder-img{display:flex;align-items:center;justify-content:center;width:100%;background:linear-gradient(145deg,#c0d0d8,#98a8b0);color:rgba(0,0,0,.25);font-family:var(--font-demi);font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:.04em;text-align:center;padding:12px}
 
 /* ===== PARALLAX UTILITY ===== */
-[data-parallax]{will-change:transform}
+[data-parallax]{will-change:auto}
 </style>
 </head>
 <body>
@@ -736,7 +736,7 @@ body::before{content:'';position:fixed;top:0;left:0;right:0;height:3px;backgroun
         </div>
       </div>
       <div class="itinerary-img fade-in">
-        <img src="/images/mountainbike-trail.jpg" alt="Mountainbiker auf dem Olimpia Trail Corviglia bei St. Moritz" style="width:100%;height:100%;object-fit:cover;aspect-ratio:5/7;min-height:300px;" loading="lazy" data-parallax>
+        <img src="/images/mountainbike-trail.jpg" alt="Mountainbiker auf dem Olimpia Trail Corviglia bei St. Moritz" style="width:100%;height:100%;object-fit:cover;aspect-ratio:5/7;min-height:300px;" loading="lazy">
       </div>
     </div>
   </div>
@@ -775,7 +775,7 @@ body::before{content:'';position:fixed;top:0;left:0;right:0;height:3px;backgroun
         <li class="feature-item"><div class="feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 10h18M3 14h18M8 6l-3 4M16 6l3 4M5 18h14a2 2 0 002-2v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2z"/><circle cx="7" cy="17" r="1"/><circle cx="17" cy="17" r="1"/></svg></div><div><h5>ÖV &amp; Bergbahnen inklusive</h5><p>Im gesamten Oberengadin und Bergell ab 2 Nächten kostenlos unterwegs – mit ÖV und Bergbahnen.</p></div></li>
       </ul>
       <div class="features-img">
-        <img src="/images/randolins-sommer-resort.jpg" alt="Luftaufnahme Berghotel Randolins Sommer mit Silvaplanersee und Engadiner Tal" style="width:100%;height:100%;object-fit:cover;aspect-ratio:4/3;min-height:200px;" loading="lazy" data-parallax>
+        <img src="/images/randolins-sommer-resort.jpg" alt="Luftaufnahme Berghotel Randolins Sommer mit Silvaplanersee und Engadiner Tal" style="width:100%;height:100%;object-fit:cover;aspect-ratio:4/3;min-height:200px;" loading="lazy">
       </div>
     </div>
   </div>
@@ -1012,17 +1012,6 @@ function renderEvents(evts){
 }
 renderEvents(summerEvents);
 sw('summer');
-
-var pEls=document.querySelectorAll('[data-parallax]');
-if(pEls.length&&window.matchMedia('(min-width:768px)').matches){
-  window.addEventListener('scroll',function(){
-    pEls.forEach(function(el){
-      var r=el.getBoundingClientRect(),ctr=r.top+r.height/2,vh=window.innerHeight;
-      var off=(ctr-vh/2)*-.08;
-      el.style.transform='translateY('+off+'px)';
-    });
-  },{passive:true});
-}
 
 })();
 </script>
