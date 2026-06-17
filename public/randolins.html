@@ -366,7 +366,7 @@ body::before{content:'';position:fixed;top:0;left:0;right:0;height:3px;backgroun
     <button type="button" id="nav-btn-winter" aria-pressed="false">Winter</button>
     <button type="button" id="nav-btn-summer" aria-pressed="true">Sommer</button>
   </div>
-  <div class="header-cta"><a href="https://www.simplebooking.it/ibe2/hotel/3873/offer/35852?lang=DE&cur=CHF" class="btn btn--accent" target="_blank" rel="noopener">Jetzt buchen <span class="btn__arrow" aria-hidden="true">→</span></a></div>
+  <div class="header-cta"><a data-season-content="summer" href="https://www.simplebooking.it/ibe2/hotel/3873/offer/35852?lang=DE&cur=CHF" class="btn btn--accent" target="_blank" rel="noopener">Jetzt buchen <span class="btn__arrow" aria-hidden="true">→</span></a><a data-season-content="winter" style="display:none" href="https://www.simplebooking.it/ibe2/hotel/3873/offer/40127?lang=DE&cur=CHF" class="btn btn--accent" target="_blank" rel="noopener">Jetzt buchen <span class="btn__arrow" aria-hidden="true">→</span></a></div>
   </div>
 </header>
 
@@ -378,7 +378,7 @@ body::before{content:'';position:fixed;top:0;left:0;right:0;height:3px;backgroun
       <p class="hero-eyebrow" data-season-content="summer">Midweek Sommer Special</p>
       <h1>Unter der Woche entspannen &amp; Kraft tanken<span data-season-content="winter" style="display:none">3 Nächte inkl. Halbpension, Wellness &amp; Panoramablick im Berghotel Randolins St.&nbsp;Moritz.</span><span data-season-content="summer">3 Nächte inkl. Halbpension, Wellness &amp; Bergbahnen im Berghotel Randolins St.&nbsp;Moritz.</span></h1>
       <div class="hero-ctas">
-        <a href="https://www.simplebooking.it/ibe2/hotel/3873/offer/35852?lang=DE&cur=CHF" class="btn btn--accent" target="_blank" rel="noopener">Jetzt buchen <span class="btn__arrow" aria-hidden="true">→</span></a>
+        <a data-season-content="summer" href="https://www.simplebooking.it/ibe2/hotel/3873/offer/35852?lang=DE&cur=CHF" class="btn btn--accent" target="_blank" rel="noopener">Jetzt buchen <span class="btn__arrow" aria-hidden="true">→</span></a><a data-season-content="winter" style="display:none" href="https://www.simplebooking.it/ibe2/hotel/3873/offer/40127?lang=DE&cur=CHF" class="btn btn--accent" target="_blank" rel="noopener">Jetzt buchen <span class="btn__arrow" aria-hidden="true">→</span></a>
         <a href="#angebot" class="btn btn--outline">Angebot entdecken <span class="btn__arrow" aria-hidden="true">↓</span></a>
       </div>
       <div class="hero-quote">
@@ -757,7 +757,7 @@ body::before{content:'';position:fixed;top:0;left:0;right:0;height:3px;backgroun
         </div>
       </div>
       <div class="itinerary-img fade-in">
-        <img src="/images/mountainbike-trail.jpg" alt="Mountainbiker auf dem Olimpia Trail Corviglia bei St. Moritz" style="width:100%;height:100%;object-fit:cover;aspect-ratio:5/7;min-height:300px;" loading="lazy">
+        <img data-season-content="summer" src="/images/mountainbike-trail.jpg" alt="Mountainbiker auf dem Olimpia Trail Corviglia bei St. Moritz" style="width:100%;height:100%;object-fit:cover;aspect-ratio:5/7;min-height:300px;" loading="lazy"><img data-season-content="winter" style="display:none;width:100%;height:100%;object-fit:cover;aspect-ratio:5/7;min-height:300px;" src="https://www.randolins.ch/site/assets/files/4754/engadin_winter_schneelandschaft_inn.1200x0.jpg" alt="Engadin Winter: Schneelandschaft im Oberengadin" loading="lazy">
       </div>
     </div>
   </div>
@@ -796,7 +796,7 @@ body::before{content:'';position:fixed;top:0;left:0;right:0;height:3px;backgroun
         <li class="feature-item"><div class="feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 10h18M3 14h18M8 6l-3 4M16 6l3 4M5 18h14a2 2 0 002-2v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2z"/><circle cx="7" cy="17" r="1"/><circle cx="17" cy="17" r="1"/></svg></div><div><h5>ÖV &amp; Bergbahnen inklusive</h5><p>Im gesamten Oberengadin und Bergell ab 2 Nächten kostenlos unterwegs – mit ÖV und Bergbahnen.</p></div></li>
       </ul>
       <div class="features-img">
-        <img src="/images/randolins-sommer-resort.jpg" alt="Luftaufnahme Berghotel Randolins Sommer mit Silvaplanersee und Engadiner Tal" style="width:100%;height:100%;object-fit:cover;aspect-ratio:4/3;min-height:200px;" loading="lazy">
+        <img data-season-content="summer" src="/images/randolins-sommer-resort.jpg" alt="Luftaufnahme Berghotel Randolins Sommer mit Silvaplanersee und Engadiner Tal" style="width:100%;height:100%;object-fit:cover;aspect-ratio:4/3;min-height:200px;" loading="lazy"><img data-season-content="winter" style="display:none;width:100%;height:100%;object-fit:cover;aspect-ratio:4/3;min-height:200px;" src="https://www.randolins.ch/site/assets/files/4754/randolins_winter_resort_snow.1200x0.jpg" alt="Berghotel Randolins im Winter mit Schnee" loading="lazy">
       </div>
     </div>
   </div>
@@ -813,7 +813,7 @@ body::before{content:'';position:fixed;top:0;left:0;right:0;height:3px;backgroun
     <h2 class="fade-in">Hier oben zählt nicht der Auftritt.<br>Hier zählt das Ankommen.</h2>
     <p class="fade-in" style="max-width:550px;margin:0 auto 32px;opacity:.75;font-size:17px;line-height:28px;">Gönnen Sie sich eine Auszeit unter der Woche – mit Panoramablick, Halbpension und Wellness in der Stille des Engadins.</p>
     <div class="cta-buttons fade-in">
-      <a href="https://www.simplebooking.it/ibe2/hotel/3873/offer/35852?lang=DE&cur=CHF" class="btn btn--accent" target="_blank" rel="noopener">Midweek Special buchen <span class="btn__arrow" aria-hidden="true">→</span></a>
+      <a data-season-content="summer" href="https://www.simplebooking.it/ibe2/hotel/3873/offer/35852?lang=DE&cur=CHF" class="btn btn--accent" target="_blank" rel="noopener">Midweek Special buchen <span class="btn__arrow" aria-hidden="true">→</span></a><a data-season-content="winter" style="display:none" href="https://www.simplebooking.it/ibe2/hotel/3873/offer/40127?lang=DE&cur=CHF" class="btn btn--accent" target="_blank" rel="noopener">Midweek Special buchen <span class="btn__arrow" aria-hidden="true">→</span></a>
       <a href="tel:0041818308383" class="btn btn--outline" target="_blank" rel="noopener">+41 81 830 83 83 <span class="btn__arrow" aria-hidden="true">→</span></a>
     </div>
     <p class="cta-phone fade-in">Oder schreiben Sie uns: <a href="mai&#108;to&#58;wi&#108;&#108;ko&#109;&#109;en&#64;rando&#108;ins&#46;ch" target="_blank" rel="noopener">wi&#108;&#108;ko&#109;&#109;en&#64;rando&#108;ins&#46;ch</a></p>
@@ -867,8 +867,12 @@ body::before{content:'';position:fixed;top:0;left:0;right:0;height:3px;backgroun
 </footer>
 
 <!-- Sticky Price Anchor -->
-<a href="https://www.simplebooking.it/ibe2/hotel/3873/offer/35852?lang=DE&cur=CHF" class="sticky-price" id="sticky-price" aria-label="Midweek Special ab CHF 390 für 3 Nächte buchen" target="_blank" rel="noopener">
+<a data-season-content="summer" href="https://www.simplebooking.it/ibe2/hotel/3873/offer/35852?lang=DE&cur=CHF" class="sticky-price" id="sticky-price" aria-label="Midweek Special ab CHF 390 für 3 Nächte buchen" target="_blank" rel="noopener">
   <span class="sticky-price__amount">ab CHF 390.–</span>
+  <span class="sticky-price__label">für 3 Nächte / P.</span>
+</a>
+<a data-season-content="winter" style="display:none" href="https://www.simplebooking.it/ibe2/hotel/3873/offer/40127?lang=DE&cur=CHF" class="sticky-price" aria-label="Midweek Winter Special ab CHF 576 für 3 Nächte buchen" target="_blank" rel="noopener">
+  <span class="sticky-price__amount">ab CHF 576.–</span>
   <span class="sticky-price__label">für 3 Nächte / P.</span>
 </a>
 
