@@ -226,9 +226,9 @@ body::before{content:'';position:fixed;top:0;left:0;right:0;height:3px;backgroun
 /* ===== NAV SEASON TOGGLE ===== */
 .nav-season-toggle{display:none;align-items:center;gap:0;margin-left:8px}
 @media(min-width:900px){.nav-season-toggle{display:flex}}
-.nav-season-toggle button{padding:6px 14px;font-family:var(--font-demi);font-size:11px;text-transform:uppercase;letter-spacing:.08em;border:1.5px solid var(--color-border);background:var(--color-bg-white);color:var(--color-text-secondary);cursor:pointer;transition:all .25s;font-weight:600;line-height:1}
-.nav-season-toggle button:first-child{border-right:none;border-radius:3px 0 0 3px}
-.nav-season-toggle button:last-child{border-radius:0 3px 3px 0}
+.nav-season-toggle button{padding:6px 14px;font-family:var(--font-demi);font-size:11px;text-transform:uppercase;letter-spacing:.08em;border:1.5px solid var(--color-border);background:var(--color-bg-white);color:var(--color-text-secondary);cursor:pointer;transition:all .25s;font-weight:600;line-height:1;border-radius:0}
+.nav-season-toggle button:first-child{border-right:none}
+.nav-season-toggle button:last-child{border-radius:0}
 .nav-season-toggle button[aria-pressed="true"]{background:var(--color-accent);border-color:var(--color-accent);color:var(--color-accent-text)}
 
 .experience-card{background:var(--color-bg-white);box-shadow:var(--shadow-card);overflow:hidden;transition:transform .3s,box-shadow .3s}
@@ -339,7 +339,7 @@ body::before{content:'';position:fixed;top:0;left:0;right:0;height:3px;backgroun
 .mobile-cta__seasons button:first-child{border-radius:6px 0 0 6px}
 .mobile-cta__seasons button:last-child{border-radius:0 6px 6px 0}
 .mobile-cta__seasons button[aria-pressed="true"]{background:var(--color-accent);color:var(--color-accent-text)}
-.mobile-cta__book .btn{padding:9px 18px;font-size:12px;border-radius:6px}
+.mobile-cta__book .btn{padding:9px 18px;font-size:12px;border-radius:0}
 @media(min-width:900px){.mobile-cta{display:none}}
 
 /* ===== FADE ANIMATIONS ===== */
